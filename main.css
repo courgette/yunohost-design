@@ -1,0 +1,133 @@
+html {
+  min-height: 100%;
+}
+
+.front {
+  background: rgb(104,104,104);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%, rgba(68,68,68,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(104,104,104,1)), color-stop(100%,rgba(68,68,68,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#444444',GradientType=1 );
+}
+
+.w30em {
+  width: 30em;
+}
+
+form {
+  background: #FFF;
+}
+
+.dblock {
+  display: block;
+}
+
+.droid {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.tac {
+  text-align: center;
+}
+
+.posa {
+  position: absolute;
+}
+
+.logo {
+  bottom: 0;
+  right: 1em;
+}
+
+.titleForm {
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+
+.btn {
+  background: #409edd;
+  color: #FFF;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+  .btn:hover, .btn:focus {
+    background: #2980b9;
+  }
+
+input.btn {
+  border:0;
+  cursor: pointer;
+}
+
+form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"], input[type="password"] {
+  border : 1px solid #CCC;
+  padding: 0.5em 1em;
+}
+  input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #409edd;
+    outline:none;
+  }
+
+form legend {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.form-inline {
+  margin-bottom: 0.7em;
+}
+
+.form-inline label {
+  min-width: 7em;
+  display: inline-block;
+}
+
+.afterinput {
+  position: relative;
+  display: inline-block;
+}
+
+.afterinput input {
+  padding-right: 3em;
+}
+
+.afterinput:after {
+  position: absolute;
+  right: 0.5em;
+  top: 0.35em;
+  color: #FFF;
+  font-size: 1.4em;
+}
+
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+   
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-connexion:after {
+  content: "\e600";
+}

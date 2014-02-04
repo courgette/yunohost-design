@@ -1,0 +1,22 @@
+.login {
+  width: 20em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin:-10em 0 0 -10em;
+  box-shadow:2px 2px 20px rgba(0,0,0,0.8);
+  padding: 1.5em;
+}
+
+.login div {
+  margin-bottom: 0.5em;
+}
+
+.login div input {
+  width: 100%;
+}
+
+.login .btn {
+  width: 100%;
+  margin-top: 0.5em;
+}

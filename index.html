@@ -6,18 +6,28 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="ratatouille.css"/>
+    <link rel="stylesheet" href="font.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="front.css"/>
     <title>YunoHost admin</title>
 </head>
-<body>
-    <form>
+<body class="front">
+    <h1 class="posa logo"><img src="img/logo-ynh.png"/><span class="element-invisible">Yunohost</span></h1>
+    <form class="login droid">
         <fieldset>
-            <legend>Connexion</legend>
-            <label for="user">Utilisateur</label>
-            <input type="text" id="user" placeholder="Nom d'utilisateur"/>
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" placeholder="Mot de passe"/>
+            <legend class="titleForm tac">Connexion</legend>
+            <div>
+                <label class="dblock" for="user">Utilisateur</label>
+                <input type="text" id="user" placeholder="Nom d'utilisateur"/>
+            </div>
+            <div>
+                <label class="dblock" for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="Mot de passe"/>
+            </div>
         </fieldset>
-        <input type="submit" value="Connexion"/>
+        <input class="btn" type="submit" value="Connexion"/>
     </form>
 </body>
 </html>
