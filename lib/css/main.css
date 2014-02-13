@@ -17,16 +17,47 @@ html {
   width: 30em;
 }
 
-form {
-  background: #FFF;
+h2, h3, h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.link-list {
+  padding: 0;
+  margin: 0;
+}
+
+  .link-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.mauto {
+  margin: auto;
 }
 
 .dblock {
   display: block;
 }
 
-.droid {
-  font-family: 'Droid Sans', sans-serif;
+.dib {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sourcePro {
+  font-family: 'source_sans_proregular';
+}
+
+.sourceProBold {
+  font-family: 'source_sans_probold';
 }
 
 .tac {
@@ -130,4 +161,31 @@ form legend {
 
 .icon-connexion:after {
   content: "\e600";
+}
+.icon-comments:before {
+  content: "\e602";
+}
+.icon-envelope:before {
+  content: "\e603";
+}
+.icon-user:before {
+  content: "\e601";
+}
+.icon-upload:before {
+  content: "\e604";
+}
+
+
+/* ==========================================================================
+   Box
+   ========================================================================== */
+   
+.box {
+  background: #FFF;
+  padding: 1.5em;
+  box-shadow:2px 2px 20px rgba(0,0,0,0.8);
+}
+
+.interface .box {
+  margin: 0 0 1em 0;
 }

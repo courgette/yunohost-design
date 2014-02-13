@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'icomoon';
+  src:url('../font/icomoon.eot?-w1vs4');
+  src:url('../font/icomoon.eot?#iefix-w1vs4') format('embedded-opentype'),
+    url('../font/icomoon.ttf?-w1vs4') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('../font/SourceSansPro-Black.eot');
+  src: url('../font/SourceSansPro-Black.eot#iefix'),
+        url('../font/SourceSansPro-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../font/sourcesanspro-bold-webfont.eot');
+    src: url('../font/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/sourcesanspro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../font/sourcesanspro-regular-webfont.eot');
+    src: url('../font/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/sourcesanspro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

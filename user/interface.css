@@ -1,0 +1,56 @@
+.user-image {
+  border: 10px solid #409edd;
+  border-radius: 90px;
+  width: 8em;
+  height: 8em;
+  position: relative;
+  overflow: hidden;
+  background: #CCC;
+  margin: auto;
+}
+
+.user-image:before {
+  position: absolute;
+  font-size: 6em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.5em;
+  color: #444;
+}
+
+.user-pseudo {
+  font-size: 2em;
+  color: #409edd;
+}
+
+.user-name {
+  color: #666;
+  margin-top: -0.3em;
+}
+
+.apps li {
+  display: inline-block;
+  text-align: center;
+}
+
+.apps a {
+  display: block;
+  width: 8.4em;
+  height: 8.4em;
+  position: relative;
+  overflow: hidden;
+  color: #409edd;
+  font-size: 1.5em;
+  line-height: 14em;
+} 
+
+.apps a:before {
+  display: block;
+  font-size: 6em;
+  position: absolute;
+  top: 0;
+  font-weight: normal;
+  right: 50%;
+  margin:-0.5em -0.5em 0 0;
+  color: #EEE;
+}
