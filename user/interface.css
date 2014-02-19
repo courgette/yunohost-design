@@ -1,3 +1,13 @@
+/* ==========================================================================
+   Sommaire
+
+   
+   ========================================================================== */
+
+/* ==========================================================================
+   
+   ========================================================================== */
+
 .user-image {
   border: 10px solid #409edd;
   border-radius: 90px;
@@ -28,9 +38,14 @@
   margin-top: -0.3em;
 }
 
+.apps {
+  margin-left: 20em;
+}
+
 .apps li {
   display: inline-block;
   text-align: center;
+  margin-left: 1em!important;
 }
 
 .apps a {
@@ -40,9 +55,12 @@
   position: relative;
   overflow: hidden;
   color: #409edd;
-  font-size: 1.5em;
-  line-height: 14em;
+  font-size: 1.5em; 
 } 
+
+.apps span {
+  display: block;
+}
 
 .apps a:before {
   display: block;
@@ -53,4 +71,12 @@
   right: 50%;
   margin:-0.5em -0.5em 0 0;
   color: #EEE;
+}
+
+.posf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15em;
+  height: 100%;
 }
