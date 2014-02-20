@@ -203,5 +203,14 @@ form legend {
    ========================================================================== */
 
 .purplebg { background: #9b59b6;}
-.orangebg { background: #e67e22; }
+.yellowbg { background: #f1c40f; }
+.orangebg { background: #f39c12; }
 .redbg { background: #e74c3c;}
+.turquoisebg { background: #1abc9c; }
+.bluebg { background: #3498db; }
+.greenbg { background: #2ecc71; }
+.darkbluebg { background: #34495e; }
+.lightbluebg { background: #6A93D4; }
+.lightpinkbg { background: #F76F87; }
+.lightyellow { background: #FFC973; }
+.lightgreen { background: #B5F36D; }
