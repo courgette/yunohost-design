@@ -197,3 +197,11 @@ form legend {
 .interface .box {
   margin: 0 0 1em 0;
 }
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+.purplebg { background: #9b59b6;}
+.orangebg { background: #e67e22; }
+.redbg { background: #e74c3c;}
