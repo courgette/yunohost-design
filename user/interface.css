@@ -54,16 +54,17 @@
 .apps li {
   display: inline-block;
   margin-left: 1em!important;
+  text-align: left;
 }
 
 .apps a {
   display: block;
-  width: 2.2em;
-  height: 2.2em;
+  width: 2.7em;
+  height: 2.7em;
   position: relative;
   color: #FFF;
-  font-size: 6em; 
-  padding: 0.2em;
+  font-size: 5em; 
+  padding: 0.5em 0.2em;
 } 
 
 .apps span {
