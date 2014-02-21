@@ -5,11 +5,20 @@
    ========================================================================== */
 
 /* ==========================================================================
-   1 = 
+   1 = User
    ========================================================================== */
+   
+.interface {
+  /*width: 320px;
+  margin: auto;*/
+}   
+
+.user {
+  margin: 1.5em 0;
+}
 
 .user-image {
-  border: 10px solid #409edd;
+  border: 5px solid #FFF;
   border-radius: 90px;
   width: 8em;
   height: 8em;
@@ -17,6 +26,10 @@
   overflow: hidden;
   background: #CCC;
   margin: auto;
+}
+
+.user-menu {
+  display: none;
 }
 
 .user-image:before {
@@ -30,11 +43,11 @@
 
 .user-pseudo {
   font-size: 2em;
-  color: #409edd;
+  color: #FFF;
 }
 
 .user-name {
-  color: #666;
+  color: #FFF;
   margin-top: -0.3em;
 }
 
@@ -43,28 +56,33 @@
    ========================================================================== */
 
 .apps {
-  position: absolute;
-  left: 50%;
-  margin-left: -50%;
-  width: 100%;
   text-align: center;
-  top: 10em;
+  position: relative;
+  z-index: 10;
   /*padding-left: 15em;*/
 }
 
 .apps li {
   display: inline-block;
-  margin-left: 1em!important;
   text-align: left;
+  margin-bottom: 0;
+  
+}
+
+.interface .apps .box {
+  margin-bottom: 0;
+  box-shadow:none;
 }
 
 .apps a {
   display: block;
-  width: 2.7em;
-  height: 2.7em;
-  position: relative;
+  min-height: 2em;
   color: #FFF;
+  font-size: 4em;
+  /*width: 2.7em;
+  height: 2.7em;
   font-size: 5em; 
+  */
   padding: 0.5em 0.2em;
 } 
 
@@ -73,17 +91,6 @@
   font-size: 0.3em;
   margin-top: -1.2em;
   margin-left: 0.2em;
-}
-
-.apps a:before {
-  display: block;
-  font-size: 6em;
-  position: absolute;
-  top: 0;
-  font-weight: normal;
-  right: 50%;
-  margin:-0.5em -0.5em 0 0;
-  color: #EEE;
 }
 
 .posf {
