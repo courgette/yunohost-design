@@ -8,25 +8,32 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height" />
     <link rel="stylesheet" href="../lib/css/ratatouille.css"/>
     <link rel="stylesheet" href="../lib/css/font.css"/>
-    <link rel="stylesheet" href="../lib/css/main.css"/>
     <link rel="stylesheet" href="front.css"/>
+    <link rel="stylesheet/less" href="../lib/css/main.less"/>
+    <link rel="stylesheet/less" href="../lib/css/anim.less"/>
+    <link rel="stylesheet/less" href="interface.less"/>
+    <script src="../lib/less-1.6.3.min.js" type="text/javascript"></script>
+
     <title>YunoHost admin</title>
 </head>
 <body class="front">
     <h1 class="posa logo"><img src="img/logo-ynh.png"/><span class="element-invisible">Yunohost</span></h1>
-    <form class="login sourcePro box" action="home.html">
-        <fieldset>
-            <legend class="titleForm tac">Connexion</legend>
-            <div>
-                <label class="dblock" for="user">Utilisateur</label>
-                <input type="text" id="user" placeholder="Nom d'utilisateur"/>
-            </div>
-            <div>
-                <label class="dblock" for="password">Mot de passe</label>
-                <input type="password" id="password" placeholder="Mot de passe"/>
-            </div>
-        </fieldset>
-        <input class="btn" type="submit" value="Connexion"/>
-    </form>
+    <div id="wrapperAjax">
+        <form class="login sourcePro box">
+            <fieldset>
+                <legend class="titleForm tac">Connexion</legend>
+                <div>
+                    <label class="dblock" for="user">Utilisateur</label>
+                    <input type="text" id="user" placeholder="Nom d'utilisateur"/>
+                </div>
+                <div>
+                    <label class="dblock" for="password">Mot de passe</label>
+                    <input type="password" id="password" placeholder="Mot de passe"/>
+                </div>
+            </fieldset>
+            <a href="home.html" data-anim="slidetoleft" data-ajax="home.html" class="btn">Connexion</a>
+            <script type="text/javascript" src="../lib/js/uxeffect.js"></script>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,3 +1,14 @@
+@import "colors.less";
+
+.transition() {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
 /* ==========================================================================
    Sommaire
 
@@ -12,7 +23,7 @@ html {
   min-height: 100%;
 }
 
-.front {
+body {
   background: rgb(104,104,104);
   background: -moz-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%, rgba(68,68,68,1) 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(104,104,104,1)), color-stop(100%,rgba(68,68,68,1)));
@@ -92,10 +103,16 @@ a {
   padding: 0.8em 1.5em;
   text-transform: uppercase;
   box-shadow: 0 1px 4px rgba(0,0,0,0.5);
-}
-  .btn:hover, .btn:focus {
+  display: inline-block;
+  .transition;
+  text-align: center;
+  &:hover, &:focus {
     background: #2980b9;
   }
+  &.icon {
+    padding-left: 1em;
+  }
+}
 
 input.btn {
   border:0;
@@ -108,14 +125,18 @@ form fieldset {
   margin: 0;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 input[type="text"], input[type="password"] {
   border : 1px solid #CCC;
   padding: 0.5em 1em;
-}
-  input[type="text"]:focus, input[type="password"]:focus {
+  &:hover {
     border: 1px solid #409edd;
     outline:none;
   }
+}
 
 form legend {
   display: block;
@@ -153,7 +174,7 @@ form legend {
    Icon
    ========================================================================== */
    
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -161,13 +182,14 @@ form legend {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  margin-right: 0.5em;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-connexion:after {
+.icon-connexion:before {
   content: "\e600";
 }
 .icon-comments:before {
@@ -201,16 +223,26 @@ form legend {
 /* ==========================================================================
    Colors
    ========================================================================== */
+   
+.bgColor(@bg) {
+  background: @bg;
+  .transition;
+  &:hover, &:focus {
+    background: lighten(@bg, 5%);
+  }
+}
 
-.purplebg { background: #9b59b6;}
-.yellowbg { background: #f1c40f; }
-.orangebg { background: #f39c12; }
-.redbg { background: #e74c3c;}
-.turquoisebg { background: #1abc9c; }
-.bluebg { background: #3498db; }
-.greenbg { background: #2ecc71; }
-.darkbluebg { background: #34495e; }
-.lightbluebg { background: #6A93D4; }
-.lightpinkbg { background: #F76F87; }
-.lightyellow { background: #FFC973; }
-.lightgreen { background: #B5F36D; }
+.purplebg { .bgColor(@purple); }
+
+.yellowbg { .bgColor(@yellow); }
+.orangebg { .bgColor(@orange); }
+.redbg { .bgColor(@red); }
+.turquoisebg { .bgColor(@turquoise); }
+.bluebg { .bgColor(@blue); }
+.greenbg { .bgColor(@green); }
+.darkbluebg { .bgColor(@darkblue); }
+/*
+.lightbluebg { background: @lightblue; }
+.lightpinkbg { background: @lightpink; }
+.lightyellow { background: @lightyellow; }
+.lightgreen { background: @lightgreen; }*/
