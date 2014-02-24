@@ -18,16 +18,18 @@
 
     <title>YunoHost admin</title>
 </head>
-<body class="front">
+<body class="front tempapp">
 <div class="mauto">
     
     <div class="application-window">Application</div>
-    <ul class="menu-apps link-list apps sourceProBold col">
+    <ul id="menuApps" class="menu-apps link-list apps sourceProBold col active">
         <li class="box"><a data-ajax="home.html" data-anim="slidetoleft" class="bluebg" href="appFull.html">Ro</a></li>
         <li class="box"><a class="purplebg" href="appFull.html">Ja</a></li>
         <li class="box"><a class="redbg" href="appFull.html">Ow</a></li>
         <li class="box"><a class="orangebg" href="appFull.html">Tr</a></li>
     </ul>
+    <button class="appbtn" id="menuBtn"><span>Menu</span></button>
 </div>
+<script type="text/javascript" src="../lib/js/uxeffect.js"></script>
 </body>
 </html>

@@ -1,5 +1,13 @@
 @import "../lib/css/mixins-flex.less";
 
+.transition() {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 /* ==========================================================================
    Sommaire
 
@@ -108,9 +116,13 @@ footer {
 }
 
 .application-window {
-  font-size: 4em;
+  font-size: 2em;
   color: #FFF;
   text-align: center;
+  background: url(img/temp-apps.png) no-repeat;
+  min-height: 786px;
+  line-height: 786px;
+  color: #333;
 }
 
 /* ==========================================================================
@@ -120,17 +132,39 @@ footer {
 .menu-apps {
   .flex-display(flex);
   width: 5em;
-  background: #333;
+  background: rgba(0,0,0,0.4);
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  .flex-direction(column);
+  .flex-direction(column-reverse);
+  padding-bottom: 5em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   li {
     box-shadow: none;
     a {
       font-size: 2em;
     }
   }
+  
+  &.active {
+    left: -5em;
+  }
 }
 
+.appbtn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 5em;
+  height: 5em;
+  background: #333;
+  border:0;
+  color: #FFF;
+  z-index: 10;
+  cursor:pointer;
+}
