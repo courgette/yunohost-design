@@ -130,16 +130,26 @@ footer {
    Menu Apps
    ========================================================================== */
 
+.container {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-left: 0 ;
+}
+
 .menu-apps {
   .flex-display(flex);
-  width: 5em;
-  background: rgba(0,0,0,0.4);
+  width: 0;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
+  background: rgba(0,0,0,0.4);
+  margin-left: 0;
   .flex-direction(column-reverse);
-  padding-bottom: 5em;
+  overflow: hidden;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -153,19 +163,12 @@ footer {
   }
   
   &.active {
-    left: -5em;
+    width: 5em;
+    + .container {
+      margin-left: 5em;
+    }
   }
 }
 
 .appbtn {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 5em;
-  height: 5em;
-  background: #333;
-  border:0;
-  color: #FFF;
-  z-index: 10;
-  cursor:pointer;
 }
