@@ -140,7 +140,7 @@ footer {
 }
 
 .menu-apps {
-  .flex-display(flex);
+  /*.flex-display(flex);*/
   width: 0;
   position: fixed;
   top: 0;
@@ -148,8 +148,9 @@ footer {
   height: 100%;
   background: rgba(0,0,0,0.4);
   margin-left: 0;
-  .flex-direction(column-reverse);
+  /*.flex-direction(column-reverse);*/
   overflow: hidden;
+  overflow-y: scroll;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -157,6 +158,7 @@ footer {
   transition: all 0.5s ease;
   li {
     box-shadow: none;
+    display: block;
     a {
       font-size: 2em;
     }
