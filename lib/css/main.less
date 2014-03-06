@@ -90,6 +90,7 @@ a {
 .logo {
   bottom: 0;
   right: 1em;
+  z-index: 10;
 }
 
 .titleForm {
@@ -228,7 +229,9 @@ form legend {
   background: @bg;
   .transition;
   &:hover, &:focus {
-    background: lighten(@bg, 5%);
+    &:after, &:before {
+      background: darken(@bg, 10%);
+    }
   }
 }
 

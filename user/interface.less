@@ -17,14 +17,32 @@
 /* ==========================================================================
    1 = User
    ========================================================================== */
-   
-.interface {
-  width: 320px;
-  margin: auto;
-}   
+
+.overlay {
+  background: rgb(104,104,104);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%, rgba(68,68,68,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(104,104,104,1)), color-stop(100%,rgba(68,68,68,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#444444',GradientType=1 );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding:2em 3em;
+}  
 
 .user {
-  margin: 1.5em 0;
+  /*margin: 1.5em 0;*/
+  background: #222;
+  padding: 0.5em 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
 }
 
 footer {
@@ -32,10 +50,10 @@ footer {
 }
 
 .user-image {
-  border: 5px solid #FFF;
+  border: 3px solid #FFF;
   border-radius: 90px;
-  width: 8em;
-  height: 8em;
+  width: 3em;
+  height: 3em;
   position: relative;
   overflow: hidden;
   background: #CCC;
@@ -48,21 +66,26 @@ footer {
 
 .user-image:before {
   position: absolute;
-  font-size: 6em;
+  font-size: 2em;
   bottom: 0;
   left: 50%;
   margin-left: -0.5em;
   color: #444;
 }
 
-.user-pseudo {
-  font-size: 2em;
+.user-info {
+  margin-left: 0.5em;
+}
+
+.user .user-pseudo {
+  font-size: 1.3em;
   color: #FFF;
 }
 
 .user-name {
   color: #FFF;
   margin-top: -0.3em;
+  display: block;
 }
 
 /* ==========================================================================
@@ -74,7 +97,8 @@ footer {
   position: relative;
   z-index: 10;
   letter-spacing: -5px;
-  /*padding-left: 15em;*/
+  width: 100%;
+  padding-top: 5em;
 }
 
 .apps li {
@@ -82,23 +106,77 @@ footer {
   text-align: left;
   margin-bottom: 0;
   letter-spacing: normal;
+  
 }
 
 .interface .apps .box {
-  margin-bottom: 0;
+  margin: 0 0 1em 1em;
   box-shadow:none;
+  background: transparent;
+}
+
+.interface .logo img {
+  opacity: 0.4;
 }
 
 .apps a {
   display: block;
   min-height: 2em;
   color: #FFF;
-  font-size: 3em;
-  /*width: 2.7em;
+  /*font-size: 3em;*/
+  width: 2.7em;
   height: 2.7em;
-  font-size: 5em; 
-  */
+  font-size: 4em; 
+  position: relative;
+  top: 0;
+  left: 0;
   padding: 0.2em 0.2em;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  &:hover {
+    left: -10px;
+    top: -10px;
+    &:after {
+      width: 10px;
+    }
+    &:before {
+      height: 10px;
+    }
+  }
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  }
+  &:after {
+    width: 0;
+    height: 100%;
+    top: 5px;
+    left: 2.7em;
+    -webkit-transform: skew(0, 45deg);
+       -moz-transform: skew(0, 45deg);
+        -ms-transform: skew(0, 45deg);
+         -o-transform: skew(0, 45deg);
+            transform: skew(0, 45deg);
+  }
+  &:before {
+    width: 100%;
+    height: 0;
+    top: 2.7em;
+    left: 5px;
+    -webkit-transform: skew(45deg, 0);
+       -moz-transform: skew(45deg, 0);
+        -ms-transform: skew(45deg, 0);
+         -o-transform: skew(45deg, 0);
+            transform: skew(45deg, 0);
+  }
 } 
 
 .apps span {
@@ -117,18 +195,12 @@ footer {
 }
 
 .application-window {
-  font-size: 2em;
-  color: #FFF;
-  text-align: center;
   background: url(img/temp-apps.png) no-repeat;
-  min-height: 786px;
-  line-height: 786px;
-  color: #333;
 }
 
 /* ==========================================================================
    Menu Apps
-   ========================================================================== */
+   ========================================================================== */  
 
 .container {
   -webkit-transition: all 0.5s ease;
