@@ -36,32 +36,55 @@
 .user {
   /*margin: 1.5em 0;*/
   background: #222;
-  padding: 0.5em 1.5em;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 4em;
   box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+  z-index: 20;
 }
 
 footer {
   padding: 3em 0;
 }
 
+.user-container {
+  display: inline-block;
+  padding: 0.4em 1em;
+}
+
 .user-image {
   border: 3px solid #FFF;
   border-radius: 90px;
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   position: relative;
   overflow: hidden;
   background: #CCC;
-  margin: auto;
+  margin: 0.2em auto 0;
 }
 
 .user-menu {
-  display: none;
+  float: right;
+  letter-spacing: -5px;
+  text-align: right;
+  li {
+    display: inline-block;
+    letter-spacing: normal;
+  }
+  a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 1.25em 3em;
+    position: relative;
+    z-index: 1;
+    .transition;
+    &:hover, &:focus {
+      background: #333;
+    }
+  }
 }
 
 .user-image:before {
@@ -74,18 +97,19 @@ footer {
 }
 
 .user-info {
-  margin-left: 0.5em;
+  margin-left: 0.4em;
 }
 
 .user .user-pseudo {
-  font-size: 1.3em;
+  font-size: 1.25em;
   color: #FFF;
 }
 
 .user-name {
   color: #FFF;
-  margin-top: -0.3em;
+  margin-top: -0.4em;
   display: block;
+  font-size: 1.1em;
 }
 
 /* ==========================================================================
@@ -96,9 +120,29 @@ footer {
   /*text-align: center;*/
   position: relative;
   z-index: 10;
-  letter-spacing: -5px;
   width: 100%;
   padding-top: 5em;
+}
+
+.apps h2 {
+  color: #FFF;
+  //border: 4px solid #FFF;
+  background: #333;
+  position: absolute;
+  left: 0;
+  font-size: 2em;
+  padding: 1em 0.5em;
+  width: 5.4em;
+  height: 5.36em;
+  span {
+    display: block;
+    margin-top: -0.5em;
+    font-size: 1.5em;
+  }
+}
+
+.apps ul {
+  letter-spacing: -5px;
 }
 
 .apps li {
@@ -106,11 +150,13 @@ footer {
   text-align: left;
   margin-bottom: 0;
   letter-spacing: normal;
-  
+  &:first-child {
+    margin-left: 10.8em!important;
+  }
 }
 
 .interface .apps .box {
-  margin: 0 0 1em 1em;
+  margin: 0;
   box-shadow:none;
   background: transparent;
 }
@@ -131,11 +177,7 @@ footer {
   top: 0;
   left: 0;
   padding: 0.2em 0.2em;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  .transition;
   &:hover {
     left: -10px;
     top: -10px;
@@ -149,11 +191,7 @@ footer {
   &:after, &:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+    .transition;
   }
   &:after {
     width: 0;
@@ -179,7 +217,7 @@ footer {
   }
 } 
 
-.apps span {
+.apps li span {
   display: block;
   font-size: 0.3em;
   margin-top: -1.2em;
