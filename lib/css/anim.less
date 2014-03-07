@@ -78,10 +78,12 @@
 .slideintop {
   -webkit-animation-name: slideInTop;
   animation-name: slideInTop;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
     &.delay {
       animation-delay: 0.5s;
       -webkit-animation-delay: 0.5s;
@@ -114,12 +116,101 @@
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    &.delay {
+      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+    }
+}
+
+/*FadeOut*/
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+  
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  } 
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
     &.delay {
       animation-delay: 0.5s;
       -webkit-animation-delay: 0.5s;
+    }
+}
+
+
+/*FadeIn left*/
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    &.delay {
+      animation-delay: 0.3s;
+      -webkit-animation-delay: 0.3s;
     }
 }
