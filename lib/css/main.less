@@ -25,13 +25,6 @@ html {
 
 body {
   background: rgb(104,104,104);
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%, rgba(68,68,68,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(104,104,104,1)), color-stop(100%,rgba(68,68,68,1)));
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  background: radial-gradient(ellipse at center,  rgba(104,104,104,1) 0%,rgba(68,68,68,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#686868', endColorstr='#444444',GradientType=1 );
 }
 
 .w30em {
@@ -70,6 +63,9 @@ a {
   display: inline-block;
   vertical-align: top;
 }
+.dinline {
+  display: inline;
+}
 
 .sourcePro {
   font-family: 'source_sans_proregular';
@@ -77,6 +73,10 @@ a {
 
 .sourceProBold {
   font-family: 'source_sans_probold';
+}
+
+.sourceProBlack {
+  font-family: 'SourceSansPro-Black';
 }
 
 .tac {
@@ -236,7 +236,7 @@ form legend {
   .transition;
   &:hover, &:focus {
     &:after, &:before {
-      background: darken(@bg, 10%);
+      background: darken(@bg, 25%);
     }
   }
 }

@@ -18,70 +18,46 @@
     <title>YunoHost admin</title>
 </head>
 <body class="interface application-window">
-    <div class=""></div>
     <h1 id="logo" class="posa logo"><img src="img/logo-ynh.svg"/><span class="element-invisible">Yunohost</span></h1>
-    <div id="overlay" class="mauto overlay active">
-        <div id="user" class="user sourcePro">
-            <div class="user-container icon icon-left-open">
-                <a href="#user-config" data-id="user-active" class="user-image icon-user icon dib btnClick"></a>
-                <div class="user-info dib">
-                    <h2 class="user-pseudo sourceProBold"><a data-id="user-active" class="btnClick" href="#user-config">Courgette</a></h2>
-                    <h3 class="user-name"><a data-id="user-active" class="btnClick" href="#user-config">Thomas LEBEAU</a></h3>    
-                </div>
-            </div>
-            <!--<ul class="user-config link-list dib">
-                <li><a class="icon icon-connexion" href="">Logout</a></li>
-            </ul>-->
-            <ul class="link-list user-menu">
-                <li><a class="icon icon-connexion" href="">Logout</a></li>
-            </ul>
-        </div>
+    <div id="overlay" class="mauto overlay active user-active">
         <div id="user-config" class="user-config-container user-config-layout">
             <div class="user-info-container">
                 <div class="close">X</div>
                 <h2 class="sourceProBold">Your information</h2>
-                <form action="">
-                    <div>
-                        <label for="">Username</label>
-                        <input type="text">
-                    </div>
-                    <div class="grp-form-2col">
-                        <label for="">Fullname</label>
-                        <input class="dib" type="text">
-                        <input class="dib" type="text">
-                    </div>
-                    <div>
-                        <label for="">Mail</label>
-                        <input type="text">
-                    </div>
-                    <input class="btn" type="submit" value="Ok"/>
-                </form>
-                <a href="#password" data-id="password-active" class="btn btnClick icon icon-left-open">Change password</a>
-            </div>
-            <div id="password" class="user-config-password user-config-layout">
-                <div data-remove="" class="close">X</div>
-                <h2 class="sourceProBold">Change your password</h2>
-                <form action="">
-                    <div>
-                        <label for="">Current Password</label>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <label for="">New Password</label>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <label for="">Retape New Password</label>
-                        <input type="password">
-                    </div>
-                    <input class="btn" type="submit" value="Ok"/>
-                    
-                </form>
+                <div class="user-info-sup">
+                    <h2>Mail</h2>
+                    <ul class="">
+                        <li>courgette@farcie.fr</li>
+                    </ul>
+                    <h2>Alias</h2>
+                    <ul class="">
+                        <li>admin@farcie.fr</li>
+                        <li>contact@farcie.fr</li>
+                    </ul>
+                    <h2>Forward</h2>
+                    <ul class="">
+                        <li>coucou@coucou.fr</li>
+                    </ul>
+                </div>
+                <a href="" data-id="password-active" class="btn icon icon-left-open">Change password</a>
             </div>
         </div>
         <div id="apps" class="apps">
-            <h2 class="sourcePro">My <span class="sourceProBold">Apps</span></h2>
-            <ul class="link-list sourceProBold dib">
+            
+            <div id="user" class="user sourcePro">
+                <div class="user-container icon icon-left-open">
+                    <a href="#user-config" data-id="user-active" class="user-image icon-user icon dib btnClick"></a>
+                    <div class="user-info dib">
+                        <h2 class="user-pseudo sourceProBold"><a data-id="user-active" class="btnClick" href="#user-config">Courgette</a></h2>
+                        <h3 class="user-name"><a data-id="user-active" class="btnClick" href="#user-config">Thomas LEBEAU</a></h3>    
+                    </div>
+                </div>
+                <ul class="link-list user-menu">
+                    <li><a class="icon icon-connexion" href="">Logout</a></li>
+                </ul>
+            </div>
+            <ul class="link-list listing-apps sourceProBold dib">
+                <li><h2 class="sourcePro title">My <span class="sourceProBold">Apps</span></h2></li>
                 <li class="box"><a class="bluebg" href="appFull.html">Ro<span class="sourcePro">RoundCube</span></a></li>
                 <li class="box"><a class="purplebg" href="appFull.html">Ja<span class="sourcePro">Jappix</span></a></li>
                 <li class="box"><a class="redbg" href="appFull.html">Ow<span class="sourcePro">Owncloud</span></a></li>
@@ -92,7 +68,11 @@
                 <li class="box"><a class="yellowbg" href="appFull.html">Op<span class="sourcePro">OpenSondage</span></a></li>
                 <li class="box"><a class="lightpinkbg" href="appFull.html">My<span class="sourcePro">MyCryptoChat</span></a></li>
             </ul>
+
+
+            
         </div>
+        
         <footer class="tac">
             
         </footer>
