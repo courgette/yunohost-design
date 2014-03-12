@@ -42,6 +42,10 @@
       //width: calc(100%-@widthuser);
       padding-left: @widthuser;
     }
+    .close {
+      opacity: 1;
+      right: -1.75em;
+    }
   }
   &.password-active {
     padding-left: @widthuser*2;
@@ -77,11 +81,13 @@
   background: #999;
   color: #333;
   position: absolute;
-  right: 1em;
-  top: -1.9em;
+  right: 0;
+  opacity: 0;
+  top: 1.8em;
   padding: 0.2em 0.5em;
   font-weight: bold;
   cursor: pointer;
+  z-index: 2;
   .transition;
   &:hover, &:focus {
     background: #FFF;
@@ -154,7 +160,7 @@ footer {
     letter-spacing: normal;
   }
   a {
-    color: #FFF;
+    color: #999;
     text-decoration: none;
     display: block;
     padding: 1.25em 3em;
@@ -166,7 +172,7 @@ footer {
       top: 1px;
     }
     &:hover, &:focus {
-      background: #333;
+      color: #FFF;
     }
   }
 }
